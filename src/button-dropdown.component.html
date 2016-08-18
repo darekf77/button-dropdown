@@ -1,0 +1,15 @@
+<div id="component"  >
+    <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toogleShow()"  tabindex="0"  >
+        <ng-content select=[content] ></ng-content>
+        <div id="triangle-container">
+            <span *ngIf="isOpen && !useAsLink" id="triangle">
+        </span>
+        </div>
+    </div>
+    <div id="container" [ngClass]="{'active': isOpen && !useAsLink}">
+
+        <div id="menu">
+            <ng-content select=[list]></ng-content>
+        </div>
+    </div>
+</div>
