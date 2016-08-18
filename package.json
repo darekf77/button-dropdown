@@ -1,0 +1,25 @@
+{
+  "name": "button-dropdown",
+  "version": "0.0.2",
+  "description": "Make dropdown for any content in angular 2 apps",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darekf77/button-dropdown.git"
+  },
+  "keywords": [
+    "angular2",
+    "dropdown-button",
+    "dropdown",
+    "dropdown-list"
+  ],
+  "author": "Dariusz Filipiak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darekf77/button-dropdown/issues"
+  },
+  "homepage": "https://github.com/darekf77/button-dropdown#readme"
+}
