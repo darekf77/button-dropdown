@@ -1,63 +1,47 @@
-#triangle-container {
-    // display: inline-block;
-    // height: 0px;
-    top: 0px;
-    position: relative;
-    #triangle {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid white;
-        z-index: 1000;
-        display: inline-block;
-        position: absolute;
-    }
+$gray: #55595c !default;
+
+:host {
+  position: relative;
 }
 
 #container {
-    text-align: right;
-    float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.menu.open {
+  .arrow-container {
     position: relative;
-    top: 5px;
-    width: 100%;
-    display: none;
-    &.active {
-        display: inline-block;
+    //left: 22px;
+    > .arrow-inner {
+      border-bottom: 12px solid #fff;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      height: 0;
+      left: 4px;
+      position: absolute;
+      top: -9px;
+      width: 0;
+      z-index: 1000;
     }
-    #menu {
-        position: absolute;
-        padding: 10px;
-        margin-top: 2px;
-        width: 310px;
-        margin-left: -310px;
-        z-index: 999;
-        height: auto;
-        background: white;
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-        display: inline-block;
-        -webkit-border-radius: 5px 5px 5px 5px;
-        border-radius: 5px 5px 5px 5px;
-        -webkit-box-shadow: 2px 2px 10px 0 #000000;
-        box-shadow: 2px 2px 10px 0 #000000;
+
+    > .arrow-border {
+      border-bottom: 16px solid $gray;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      height: 0;
+      position: absolute;
+      top: -9px;
+      width: 0;
     }
+  }
+}
+
+.menu {
+  position: absolute;
+  left: -16px;
 }
 
 #wrap {
-    text-align: center;
-    
-    &:focus {
-        outline: none;
-    }
-    
-    &:hover {
-        opacity: 1.0;
-    }
-    opacity: 0.8;
-    cursor: pointer;
-    &.active {
-        opacity: 1.0;
-    }
-    
+  cursor: pointer;
 }

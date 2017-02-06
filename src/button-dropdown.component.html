@@ -1,15 +1,12 @@
-<div id="component"  >
-    <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toogleShow()"  tabindex="0"  >
-        <ng-content select=[content] ></ng-content>
-        <div id="triangle-container">
-            <span *ngIf="isOpen && !useAsLink" id="triangle">
-        </span>
-        </div>
+<div id="container" [ngClass]="{'open': isOpen}">
+  <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toggleShow($event)" tabindex="0">
+    <ng-content select=[content]></ng-content>
+  </div>
+  <div class="menu" [ngClass]="{'open': isOpen, 'active': isOpen }" #menu>
+    <ng-content select=[list]></ng-content>
+    <div class="arrow-container">
+      <div class="arrow-inner"></div>
+      <div class="arrow-border"></div>
     </div>
-    <div id="container" [ngClass]="{'active': isOpen && !useAsLink}">
-
-        <div id="menu">
-            <ng-content select=[list]></ng-content>
-        </div>
-    </div>
+  </div>
 </div>
