@@ -2,8 +2,8 @@ import { Component, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'button-dropdown',
-  template: './button-dropdown.component.html',
-  styles:   ['./button-dropdown.component.scss']
+  template:  require('./button-dropdown.component.html'),
+  styles:   [ require('./button-dropdown.component.scss') ]
 })
 export class ButtonDropdownComponent {
   private isOpen: boolean = false;
