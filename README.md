@@ -1,19 +1,25 @@
-button dropdown
+button dropdown for Angular 2 or 4
 ---------------
 
 Make dropdown from any button!
 
-import it
-    import { ButtonDropdownComponent } from 'button-dropdown/button-dropdown';
+Usage
 
-include it
+```ts
+import { ButtonDropdownModule } from 'button-dropdown';
 
+
+// in module
+@NgModule({
     ...
-    directives: [ ButtonDropdownComponent ]
+    imports: [CommonModule, ButtonDropdownModule],
     ...
+})
+```
 
 use in template
 
+```html
     <button-dropdown>
          <div content id="avatar" >
              <button>  awesome </button>
@@ -25,3 +31,4 @@ use in template
     	    </ul>    
 	     </div>
 	</button-dropdown>
+```
