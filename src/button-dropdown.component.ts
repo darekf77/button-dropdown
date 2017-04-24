@@ -2,8 +2,8 @@ import { Component, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'button-dropdown',
-  template:  require('./button-dropdown.component.html'),
-  styles:   [ require('./button-dropdown.component.scss') ]
+  templateUrl: './button-dropdown.component.html',
+  styleUrls: ['./button-dropdown.component.scss']
 })
 export class ButtonDropdownComponent {
   private isOpen: boolean = false;
@@ -37,13 +37,13 @@ export class ButtonDropdownComponent {
   checkPosition() {
     setTimeout(() => {
       // czy da się pozbyć elementRef?
-      let el   = this._elementRef.nativeElement.querySelector('[list]');
+      let el = this._elementRef.nativeElement.querySelector('[list]');
       let triggerRect = this._elementRef.nativeElement
         .querySelector('#wrap')
         .getBoundingClientRect();
       let arrowContainer = this._elementRef.nativeElement.querySelector('.arrow-container');
 
-      if(!el){
+      if (!el) {
         return;
       }
       let menuRect = el.getBoundingClientRect();
@@ -51,7 +51,7 @@ export class ButtonDropdownComponent {
         let left: number = +el.style.left.slice(0, -2);
         el.style.left = left - (menuRect.right - window.innerWidth) - 20 + 'px';
       }
-      if(menuRect.left < 0){
+      if (menuRect.left < 0) {
         let left: number = +el.style.left.slice(0, -2);
         el.style.left = left - menuRect.left + 5 + 'px';
       }

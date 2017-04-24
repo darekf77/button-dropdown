@@ -6,7 +6,6 @@ import { ButtonDropdownComponent }   from './button-dropdown.component';
 @NgModule({
     imports: [CommonModule],
     exports: [ButtonDropdownComponent],
-    declarations: [ButtonDropdownComponent],
-    providers: [],
+    declarations: [ButtonDropdownComponent]
 })
 export class ButtonDropdownModule { }
