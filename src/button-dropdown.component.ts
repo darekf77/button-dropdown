@@ -2,7 +2,20 @@ import { Component, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'button-dropdown',
-  templateUrl: './button-dropdown.component.html',
+  template: `
+    <div id="container" [ngClass]="{'open': isOpen}">
+      <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toggleShow($event)" tabindex="0">
+        <ng-content select=[content]></ng-content>
+      </div>
+      <div class="menu" [ngClass]="{'open': isOpen, 'active': isOpen }" #menu>
+        <ng-content select=[list]></ng-content>
+        <div class="arrow-container">
+          <div class="arrow-inner"></div>
+          <div class="arrow-border"></div>
+        </div>
+      </div>
+    </div>
+  `,
   styleUrls: ['./button-dropdown.component.scss']
 })
 export class ButtonDropdownComponent {
