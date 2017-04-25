@@ -16,7 +16,51 @@ import { Component, HostListener, ElementRef } from '@angular/core';
       </div>
     </div>
   `,
-  styleUrls: ['./button-dropdown.component.scss']
+  styles: [ `
+    :host {
+        position: relative;
+      }
+
+      #container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .menu.open .arrow-container {
+        position: relative;
+      }
+      .menu.open .arrow-container > .arrow-inner {
+        border-bottom: 12px solid #fff;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        height: 0;
+        left: 4px;
+        position: absolute;
+        top: -9px;
+        width: 0;
+        z-index: 1000;
+      }
+      .menu.open .arrow-container > .arrow-border {
+        border-bottom: 16px solid #55595c;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        height: 0;
+        position: absolute;
+        top: -9px;
+        width: 0;
+      }
+
+      .menu {
+        position: absolute;
+        left: -16px;
+      }
+
+      #wrap {
+        cursor: pointer;
+      }
+
+  
+  ` ]
 })
 export class ButtonDropdownComponent {
   private isOpen: boolean = false;
