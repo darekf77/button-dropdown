@@ -7,7 +7,6 @@
 /node_modules
 /bower_components
 npm-debug.log
-
 /coverage
 
 /copy
@@ -22,3 +21,6 @@ index.js.d.ts
 /copy
 /typings
 /js
+ 
+
+ 

@@ -16,7 +16,7 @@
     "dropdown",
     "dropdown-list"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",

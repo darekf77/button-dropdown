@@ -1,4 +1,4 @@
-button dropdown for Angular 2 or 4
+button dropdown for Angular 2 or 4 with scss
 ---------------
 
 Make dropdown from any button!

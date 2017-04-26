@@ -1,2 +1,2 @@
-export * from './button-dropdown.component';
-export * from './button-dropdown.module';
+export { ButtonDropdownComponent } from './button-dropdown.component';
+export { ButtonDropdownModule } from './button-dropdown.module';

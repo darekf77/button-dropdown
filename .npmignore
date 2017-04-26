@@ -5,7 +5,6 @@
 /node_modules
 /bower_components
 npm-debug.log
-copy_crm.sh
 
 /copy
 /coverage
@@ -17,10 +16,13 @@ copy_crm.sh
 # can use belowe becouse issiue
 # https://github.com/angular/angular-cli/issues/3426
 
-/src/**/*.ts
-index.ts
-!/src/**/*.d.ts
-ng2-rest.js.map
+# /src/**/*.ts
+# !/src/**/*.d.ts
+
+# index.ts
+# !index.d.ts
+
+
 
 /docs
 /preview
@@ -32,5 +34,8 @@ protractor.conf.js
 tsconfig.json
 tslint.json
 tsconfig.webpack.json
+rollup-config.js
+tsconfig-aot.json
+
 
 
