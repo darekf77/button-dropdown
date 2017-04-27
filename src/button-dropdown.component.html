@@ -1,5 +1,5 @@
 <div id="container" [ngClass]="{'open': isOpen}">
-    <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toggleShow($event)" tabindex="0">
+    <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toggleShow()" tabindex="0">
         <ng-content select=[content]></ng-content>
     </div>
     <div class="menu" [ngClass]="{'open': isOpen, 'active': isOpen }" #menu>

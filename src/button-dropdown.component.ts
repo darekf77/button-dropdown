@@ -6,7 +6,7 @@ import { Component, HostListener, ElementRef } from '@angular/core';
   styleUrls: ['./button-dropdown.component.scss']
 })
 export class ButtonDropdownComponent {
-  private isOpen: boolean = false;
+  public isOpen: boolean = false;
 
   constructor(private _elementRef: ElementRef) {
   }
