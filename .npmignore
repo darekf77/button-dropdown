@@ -21,7 +21,9 @@ npm-debug.log
 
 # index.ts
 # !index.d.ts
-
+index.js
+index.d.ts
+index.js.map
 
 
 /docs
