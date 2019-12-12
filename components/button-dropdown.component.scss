@@ -1,0 +1,47 @@
+$gray: #55595c !default;
+
+:host {
+  position: relative;
+}
+
+#container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu.open {
+  .arrow-container {
+    position: relative;
+    //left: 22px;
+    > .arrow-inner {
+      border-bottom: 12px solid #fff;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      height: 0;
+      left: 4px;
+      position: absolute;
+      top: -9px;
+      width: 0;
+      z-index: 1000;
+    }
+
+    > .arrow-border {
+      border-bottom: 16px solid $gray;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      height: 0;
+      position: absolute;
+      top: -9px;
+      width: 0;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  left: -16px;
+}
+
+#wrap {
+  cursor: pointer;
+}
