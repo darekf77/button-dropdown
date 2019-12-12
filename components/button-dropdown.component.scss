@@ -10,8 +10,10 @@ $gray: #55595c !default;
 }
 
 .menu.open {
+  display: block;
   .arrow-container {
     position: relative;
+    margin-top: 9px;
     //left: 22px;
     > .arrow-inner {
       border-bottom: 12px solid #fff;
@@ -39,7 +41,10 @@ $gray: #55595c !default;
 
 .menu {
   position: absolute;
+  display: none;
   left: -16px;
+  border-radius: 2px;
+  margin-left: 12px;
 }
 
 #wrap {

@@ -1,12 +1,19 @@
-<div id="container" [ngClass]="{'open': isOpen}">
-    <div id="wrap" [ngClass]="{'active': isOpen}" (click)="toggleShow()" tabindex="0">
-        <ng-content select=[content]></ng-content>
+<div id="container"
+     [ngClass]="{'open': isOpen}">
+  <div id="wrap"
+       [ngClass]="{'open': isOpen}"
+       (click)="toggleShow()"
+       tabindex="0">
+    <ng-content select=[content]></ng-content>
+  </div>
+  <div class="menu"
+       [ngClass]="{'open': isOpen}"
+       #menu>
+    <div class="arrow-container"
+         [ngClass]="{'open': isOpen}">
+      <div class="arrow-inner"></div>
+      <div class="arrow-border"></div>
     </div>
-    <div class="menu" [ngClass]="{'open': isOpen, 'active': isOpen }" #menu>
-        <ng-content select=[list]></ng-content>
-        <div class="arrow-container">
-            <div class="arrow-inner"></div>
-            <div class="arrow-border"></div>
-        </div>
-    </div>
+    <ng-content select=[list]></ng-content>
+  </div>
 </div>
