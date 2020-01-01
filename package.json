@@ -8,7 +8,8 @@
       "includeAsDev": "*",
       "includeOnly": [],
       "dependencies": {}
-    }
+    },
+    "linkedProjects": []
   },
   "name": "button-dropdown",
   "version": "1.0.10",
