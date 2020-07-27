@@ -9,7 +9,12 @@
       "includeOnly": [],
       "dependencies": {}
     },
-    "linkedProjects": []
+    "linkedProjects": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false
+    }
   },
   "name": "button-dropdown",
   "version": "1.0.10",
