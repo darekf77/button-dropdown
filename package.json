@@ -140,7 +140,7 @@
     "bootstrap": "4.3.1",
     "bs4-breakpoint": "~2.0.8",
     "buffer-shims": "^1.0.0",
-    "button-dropdown": "~1.0.15",
+    "button-dropdown": "~1.0.16",
     "callsite-record": "4.1.3",
     "chai": "^4.2.0",
     "chalk": "^2.3.2",
@@ -294,5 +294,6 @@
       "pre-push": "tnp deps:show:if:standalone"
     }
   },
-  "private": false
+  "private": false,
+  "lastBuildTagHash": "7fb1c45ba5a4aa39d354b51873c2f847b6f0cb41"
 }
