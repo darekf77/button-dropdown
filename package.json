@@ -138,7 +138,7 @@
     "bootstrap": "4.3.1",
     "bs4-breakpoint": "2.0.21",
     "buffer-shims": "1.0.0",
-    "button-dropdown": "1.0.25",
+    "button-dropdown": "1.0.26",
     "callsite-record": "4.1.3",
     "chai": "4.2.0",
     "chalk": "2.3.2",
@@ -303,5 +303,5 @@
     }
   },
   "private": false,
-  "lastBuildTagHash": "d82919673a729cbff31e6bbde99ac890efd4dcc0"
+  "lastBuildTagHash": "018c81cbd7b6b5e8f1dd48c443f962949f626fb2"
 }
