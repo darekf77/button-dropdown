@@ -33,7 +33,7 @@
     ]
   },
   "name": "button-dropdown",
-  "version": "1.0.34",
+  "version": "1.0.36",
   "description": "Make dropdown for any content in angular 2 apps",
   "main": "karma.conf.js",
   "scripts": {
