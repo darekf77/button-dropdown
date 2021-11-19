@@ -29,5 +29,6 @@
     "dropdown-button",
     "dropdown",
     "dropdown-list"
-  ]
+  ],
+  "workerPlugins": {}
 }
