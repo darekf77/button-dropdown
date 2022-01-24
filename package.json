@@ -290,5 +290,8 @@
     "zone.js": "0.10.2"
   },
   "private": false,
-  "lastBuildTagHash": "49ad91410c56ad55e38118ef258700bef4dc85fd"
+  "lastBuildTagHash": "49ad91410c56ad55e38118ef258700bef4dc85fd",
+  "recreatedFrom": {
+    "tnp.json": true
+  }
 }
