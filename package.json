@@ -5,7 +5,7 @@
     "version": "v2",
     "overrided": {
       "ignoreDepsPattern": [],
-      "includeAsDev": "*",
+      "includeAsDev": [],
       "includeOnly": [],
       "dependencies": {},
       "linkedFolders": []
