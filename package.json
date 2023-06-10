@@ -1,8 +1,46 @@
 {
+  "tnp": {
+    "resources": [],
+    "overrided": {
+      "ignoreDepsPattern": [],
+      "includeAsDev": [],
+      "includeOnly": [],
+      "dependencies": {},
+      "linkedFolders": [],
+      "npmFixes": []
+    },
+    "linkedProjects": [],
+    "smartContainerBuildTarget": "",
+    "linkedRepos": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false,
+      "includeNodeModules": false
+    },
+    "smartContainerTarget": "",
+    "type": "isomorphic-lib",
+    "version": "v3",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "description": "Make dropdown for any content in angular 2 apps",
+    "author": "Dariusz Filipiak",
+    "homepage": "https://github.com/darekf77/button-dropdown#readme",
+    "main": "karma.conf.js",
+    "keywords": [
+      "angular2",
+      "dropdown-button",
+      "dropdown",
+      "dropdown-list"
+    ],
+    "workerPlugins": {}
+  },
   "name": "button-dropdown",
   "version": "1.0.47",
   "description": "Make dropdown for any content in angular 2 apps",
-  "main": "karma.conf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
