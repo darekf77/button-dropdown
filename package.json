@@ -3,7 +3,7 @@
     "resources": []
   },
   "name": "button-dropdown",
-  "version": "1.0.51",
+  "version": "1.0.52",
   "description": "Make dropdown for any content in angular 2 apps",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
